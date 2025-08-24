@@ -1,5 +1,4 @@
 # AutoMailGPT-
-# Outlook Email Summarizer
 
 A Python script that fetches emails from Microsoft Outlook, summarizes their content using the OpenAI API, and saves the summaries to a text file on your desktop.
 
