@@ -17,10 +17,9 @@ A Python script that fetches emails from Microsoft Outlook, summarizes their con
 
 Install dependencies:
 
-``bash
 pip install pywin32 openai
 
-##Setup
+## Setup
 1. Clone the repository
 git clone https://github.com/your-username/outlook-email-summarizer.git
 
@@ -29,7 +28,7 @@ git clone https://github.com/your-username/outlook-email-summarizer.git
 For security, do not hardcode your API key in the script.
 Instead, store it in an environment variable.
 
-##Usage
+## Usage
 
 Run the script with the number of days back you want to fetch emails:
 
