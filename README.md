@@ -1,54 +1,35 @@
 # AutoMailGPT-
+# Outlook Email Summarizer
 
-This script fetches emails from Microsoft Outlook, summarizes their content using the OpenAI API, and saves the summaries to a text file on your desktop.
+A Python script that fetches emails from Microsoft Outlook, summarizes their content using the OpenAI API, and saves the summaries to a text file on your desktop.
 
-Features
+## Features
+- Fetch emails from your Outlook inbox for a specified number of past days.
+- Summarize email content automatically using OpenAI.
+- Save summarized output to a text file on your desktop.
 
-Fetch emails from your Outlook inbox for a given number of past days.
-
-Automatically generate concise summaries of email bodies using OpenAI.
-
-Save the summarized output to a file on your desktop.
-
-Requirements
-
-Python 3.8+
-
-Microsoft Outlook installed and configured
-
-Dependencies:
-
-pywin32 (for Outlook access)
-
-openai
+## Requirements
+- Python 3.8+
+- Microsoft Outlook installed and configured
+- Python packages:
+  - `pywin32`
+  - `openai`
 
 Install dependencies:
 
+``bash
 pip install pywin32 openai
 
-Setup
+##Setup
 1. Clone the repository
 git clone https://github.com/your-username/outlook-email-summarizer.git
-cd outlook-email-summarizer
 
 2. Configure your OpenAI API key
 
 For security, do not hardcode your API key in the script.
 Instead, store it in an environment variable.
 
-Windows (PowerShell):
-setx OPENAI_API_KEY "your_api_key_here"
-
-macOS/Linux (bash/zsh):
-export OPENAI_API_KEY="your_api_key_here"
-
-
-Then, update the script to read the key:
-
-import os
-openai.api_key = os.getenv("OPENAI_API_KEY")
-
-Usage
+##Usage
 
 Run the script with the number of days back you want to fetch emails:
 
